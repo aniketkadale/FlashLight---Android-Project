@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#060404"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/flashimage"
+        android:layout_width="297dp"
+        android:layout_height="550dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/turnedoff"
+        android:contentDescription="@string/mainimage"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="320dp"
+        android:layout_height="75dp"
+        android:background="#46ADDC"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:text="@string/btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flashimage"
+        android:contentDescription="@string/mainbtn"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
